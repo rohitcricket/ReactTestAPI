@@ -3,8 +3,8 @@ import * as BookAPI from "./BooksAPI.js";
 
 class Read extends Component {
 	componentDidMount() {
-		BookAPI.get().then(books => {
-			console.log({ books });
+		BookAPI.getAll().then(bookId => {
+			console.log(bookId);
 		});
 	}
 
